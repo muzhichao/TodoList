@@ -64,7 +64,7 @@ struct ContentView: View {
                                 SingleCarView(index: item.id, isEditingMode: self.$isEditingMode, selection: self.$selection)
                                     .environmentObject(self.UserData)
                                     .padding(.top)
-                                    .animation(.spring(), value: 1)
+                                    .animation(.spring())
                                     .transition(.slide)
                             }
                         }
